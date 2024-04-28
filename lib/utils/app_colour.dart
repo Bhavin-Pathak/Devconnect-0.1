@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
-const mobileBackgroundColor = Color.fromRGBO(0, 0, 0, 1);
-const mobileSearchColor = Color.fromRGBO(38, 38, 38, 1);
-const blueColor = Color.fromRGBO(0, 149, 246, 1);
-const primaryColor = Colors.white;
-const secondaryColor = Colors.grey;
+//? APP Colours
+const whiteColour = Colors.white;
+const grayColor = Colors.grey;
+const primaryLogoColourOrange = Color(0xFFFCB937);
+const primaryLogoColourPurple = Color(0xFF8C4DFE);
+const primarytextBlack = Color(0x00ff0000);
+const primarytextWhite = Color(0xFFFFFFFF);
