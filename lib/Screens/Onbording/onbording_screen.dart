@@ -1,3 +1,4 @@
+import 'package:devconnect/Screens/Auth/login_screen.dart';
 import 'package:devconnect/Screens/Onbording/Model/onbording-models.dart';
 import 'package:devconnect/utils/app_colour.dart';
 import 'package:devconnect/utils/screen_size.dart';
@@ -108,7 +109,15 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       ? Padding(
                           padding: const EdgeInsets.all(30),
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              //! Navigate to LoginScreen
+                              Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const LoginScreen(),
+                                ),
+                              );
+                            },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: primaryLogoColourPurple,
                               shape: RoundedRectangleBorder(
