@@ -45,45 +45,55 @@ class _MobileScreenLayoutState extends State<MobileScreenLayout> {
         // children: homeScreenItems,
       ),
       bottomNavigationBar: CupertinoTabBar(
-        backgroundColor: mobileBackgroundColor,
+        backgroundColor: whiteColour,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(
               Icons.home,
-              color: (_page == 0) ? primaryColor : secondaryColor,
+              color: (_page == 0)
+                  ? primaryLogoColourOrange
+                  : primaryLogoColourPurple,
             ),
             label: '',
-            backgroundColor: primaryColor,
+            backgroundColor: whiteColour,
           ),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.search,
-                color: (_page == 1) ? primaryColor : secondaryColor,
+                color: (_page == 1)
+                    ? primaryLogoColourOrange
+                    : primaryLogoColourPurple,
               ),
               label: '',
-              backgroundColor: primaryColor),
+              backgroundColor: whiteColour),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.add_circle,
-                color: (_page == 2) ? primaryColor : secondaryColor,
+                color: (_page == 2)
+                    ? primaryLogoColourOrange
+                    : primaryLogoColourPurple,
               ),
               label: '',
-              backgroundColor: primaryColor),
+              backgroundColor: whiteColour),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.favorite,
-              color: (_page == 3) ? primaryColor : secondaryColor,
+              color: (_page == 3)
+                  ? primaryLogoColourOrange
+                  : primaryLogoColourPurple,
             ),
             label: '',
-            backgroundColor: primaryColor,
+            backgroundColor: whiteColour,
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.person,
-              color: (_page == 4) ? primaryColor : secondaryColor,
+              color: (_page == 4)
+                  ? primaryLogoColourOrange
+                  : primaryLogoColourPurple,
             ),
             label: '',
-            backgroundColor: primaryColor,
+            backgroundColor: whiteColour,
           ),
         ],
         onTap: navigationTapped,
